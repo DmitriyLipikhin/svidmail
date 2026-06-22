@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Приглашение ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Сердечки -->
+    <div id="hearts"></div>
+
+    <!-- Стартовый экран -->
+    <section class="screen active" id="startScreen">
+
+        <h1 class="title">
+            ❤️ Для самой прекрасной девушки ❤️
+        </h1>
+
+        <p class="subtitle">
+            У меня есть для тебя небольшой сюрприз...
+        </p>
+
+        <button class="main-btn" onclick="showQuestion()">
+            Открыть 💌
+        </button>
+
+    </section>
+
+    <!-- Вопрос -->
+    <section class="screen" id="questionScreen">
+
+        <h1>
+            Ты пойдёшь со мной на свидание? 🌹
+        </h1>
+
+        <div class="question-buttons">
+
+            <button id="yesBtn">
+                Да ❤️
+            </button>
+
+            <button id="noBtn">
+                Нет 🙈
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Форма -->
+    <section class="screen" id="formScreen">
+
+        <h2>
+            ❤️ Давай всё спланируем ❤️
+        </h2>
+
+        <form id="dateForm">
+
+            <label>
+                📅 Выбери удобную дату
+            </label>
+
+            <input type="date" id="date" required>
+
+            <label>
+                🕒 Выбери удобное время
+            </label>
+
+            <input type="time" id="time" required>
+
+            <h3>
+                ✨ Как бы ты хотела провести свидание?
+            </h3>
+
+            <div class="date-type-grid">
+
+                <label class="date-card">
+
+                    <input type="radio" name="dateType" value="Ресторан">
+
+                    <div class="emoji">
+                        🍽️
+                    </div>
+
+                    <span>Ресторан</span>
+
+                </label>
+
+                <label class="date-card">
+
+                    <input type="radio" name="dateType" value="Кино">
+
+                    <div class="emoji">
+                        🎬
+                    </div>
+
+                    <span>Кино</span>
+
+                </label>
+
+                <label class="date-card">
+
+                    <input type="radio" name="dateType" value="Прогулка">
+
+                    <div class="emoji">
+                        🌅
+                    </div>
+
+                    <span>Прогулка</span>
+
+                </label>
+
+                <label class="date-card">
+
+                    <input type="radio" name="dateType" value="Сюрприз">
+
+                    <div class="emoji">
+                        🚗
+                    </div>
+
+                    <span>Вечерняя поездка</span>
+
+                </label>
+
+                <label class="date-card">
+
+                    <input type="radio" name="dateType" value="Сюрприз">
+
+                    <div class="emoji">
+                        🏕️
+                    </div>
+
+                    <span>Кемпинг, база отдыха</span>
+
+                </label>
+
+            </div>
+
+            <h3>
+                🍽️ Что тебе хотелось бы поесть?
+            </h3>
+
+            <div class="food-grid">
+
+                <label class="food-card">
+                    <input type="checkbox" value="Суши">
+                    <div class="food-icon">🍣</div>
+                    <span>Суши</span>
+                </label>
+
+                <label class="food-card">
+                    <input type="checkbox" value="Пицца">
+                    <div class="food-icon">🍕</div>
+                    <span>Пицца</span>
+                </label>
+
+                <label class="food-card">
+                    <input type="checkbox" value="Стейк">
+                    <div class="food-icon">🥩</div>
+                    <span>Стейк</span>
+                </label>
+
+                <label class="food-card">
+                    <input type="checkbox" value="Десерт">
+                    <div class="food-icon">🍰</div>
+                    <span>Десерт</span>
+                </label>
+
+            </div>
+
+            <label class="wish-label">
+
+                💌 Есть особые пожелания для нашего свидания или какое-то определенное заведение?
+
+            </label>
+
+            <textarea id="comment" rows="5"
+                placeholder="Например: прогулка возле озера, уютный ресторан, красивый закат... ❤️"></textarea>
+
+            <button type="submit" class="submit-btn">
+
+                Отправить ❤️
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Успех -->
+
+    <section class="screen" id="successScreen">
+
+        <h1>
+            ❤️ Спасибо ❤️
+        </h1>
+
+        <p>
+            Теперь я официально начинаю ждать наше свидание 🥰
+        </p>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
